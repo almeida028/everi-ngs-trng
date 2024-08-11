@@ -1,0 +1,18 @@
+<h1 changeColor>home-page </h1>
+
+<button (click)="GotoPageFnc()">user</button><br>
+
+<form>
+    <h2>selected News:{{selectedNews}}</h2>
+    <input placeholder="comment" [(ngModel)]="commentVar" name="commentVav" #commentVav="ngModel">
+    <button (click)="addCommentFnc(commentVav)">add Comment</button>
+<button (click) ="namService.Loginfnc()">login</button>
+</form>
+
+<app-news-page title="Education" detail="Angular is tot in school"
+    [commentVar]="commentArr['Education']"
+    (SelectMe)="SelectMeFnc($event)"
+    ></app-news-page>
+
+<app-news-page title="sports" detail="done" [commentVar]="commentArr['sports']" (SelectMe)="SelectMeFnc($event) "></app-news-page>
+<app-news-page title="politics" delail="done"  [commentVar]="commentArr['politics']" (SelectMe)="SelectMeFnc($event)"></app-news-page> 

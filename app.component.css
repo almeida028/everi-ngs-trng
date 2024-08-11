@@ -1,0 +1,33 @@
+.list {
+    width: 200px;
+    min-height: 200px;
+    border: 1px solid #eca9a9;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+  }
+  
+  .list-item {
+    padding: 10px;
+    border: 1px solid #f3c6c6;
+    margin: 5px;
+    background-color: #fff;
+    cursor: move;
+  }
+  .ngStyle{
+    color: aquamarine;
+    background-color: #eca9a9;
+  }
+
+  .color-box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+  }
+.ErrMsg{
+    font-size: large;
+    color: rgb(220, 82, 82);
+}

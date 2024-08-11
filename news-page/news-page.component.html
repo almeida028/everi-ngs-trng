@@ -1,0 +1,11 @@
+<div class="divCls">
+<h1>Title:{{title}}</h1>
+<h3>Details :{{detail}}</h3>
+<ul>
+    <li *ngFor ="let commentVar of commentArr">
+        <p>{{commentVar}}</p>
+    </li>
+
+</ul>
+<button (click) ="SelectMeFnc()">select </button>
+</div>
